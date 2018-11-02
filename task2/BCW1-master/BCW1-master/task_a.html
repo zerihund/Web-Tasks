@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task A</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+    <h1>Form validation HTML5</h1>
+
+    <form>
+        <fieldset>
+            <input placeholder="First name" type="text" pattern="[a-zA-Z]{3,}" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Last name" type="text" pattern="[a-zA-Z]{2,}" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Email " type="email" tabindex="3" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Phone Number (+358449667040)" type="text" pattern="[+358]+[0-9]{12}" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Address" type="text" tabindex="5" >
+        </fieldset>
+        <fieldset>
+            <input placeholder="Postal code" type="text"  pattern="[0-9]{5}" tabindex="6" >
+        </fieldset>
+        <fieldset>
+            <input placeholder="Password" type="password" pattern=".{6,}" tabindex="5" required>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+    </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

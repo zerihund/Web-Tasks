@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task B</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form validation JavaScript</h1>
+
+        <form onsubmit="return validation()">
+            <!-- your input elements here -->
+            <fieldset>
+                <input placeholder="First name" type="text" id="firstName"  tabindex="1" >
+                <span id ="userFirstName"></span>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Last name" type="text" id="lastName"  tabindex="2" >
+                <span id ="userLastName"></span>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Email " type="text" id="email" tabindex="3" >
+                <span id ="userEmail"></span>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Phone Number" type="text" id="phoneNumber"  tabindex="4" >
+                <span id ="userPhoneNumber"></span>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Address" type="text" id="address" tabindex="5" >
+                <span id ="userAddress"></span>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Postal code" type="text"  id="postalCode"  tabindex="6" >
+                <span id ="userPostalCode"></span>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Password" type="text" id="password" tabindex="5" >
+                <span id ="userPassword"></span>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="submitForm" data-submit="...Sending">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
