@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul class="fruits">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li data-foodtype="squishy">Orange</li>
+    <li>Pear</li>
+    <li>Kiwi</li>
+    <li id="berry">Strawberry</li>
+</ul>
+<script>
+  //`use strict`
+  const berry=document.getElementById('berry');
+  console.log(berry);
+  const myBerry= document.getElementById('berry').innerHTML;
+  console.log('I found the berry: '+myBerry);
+  berry.style.backgroundColor='red';
+  //berry.style.width="100px";
+  const orange=document.querySelector("[data-foodtype='squishy']");
+  console.log(orange)
+  orange.style.backgroundColor='orange'
+  const myOrange =document.querySelector("[data-foodtype='squishy']").innerHTML;
+  console.log('I found the fruit: '+myOrange);
+  const list =document.getElementsByTagName('li');
+  //list.style.width="100px";
+  console.log(list);
+  for(let i=0; i < list.length;i++){
+    list[i].style.width="100px";
+    list[i].style.listStyleType="none";
+    const myList=list[i].innerHTML;
+    console.log(myList);
+    list[3].style.backgroundColor="green";
+  }
+  const qList =document.querySelectorAll('li')
+  console.log(qList);
+
+  qList.forEach((item) =>{
+    console.log(item.innerHTML);
+    item.style.border='thick solid #000000'
+  });
+</script>
+</body>
+</html>
